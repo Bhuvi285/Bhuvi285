@@ -3,7 +3,7 @@
 
 Email Me 👉 ✉️ **bhuvineve05@gmail.com.com** For Collaboration/Project or Anything Else. 😊😊
 
-- 🔭 **I’m currently working on:** Complete Login/Signup Authentication using MERN - Mini Project
+- 🔭 **I’m currently working on:** Projects Based on MERN Stack
 - 🌱 **I’m currently learning:** T.Y B.Tech Computer Engineering
 - 👯 **I’m looking to collaborate on:** DevConnect - Personal Project 
 - 📫 **How to reach me:** bhuvineve05@gail.com
