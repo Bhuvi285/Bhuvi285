@@ -12,6 +12,10 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2F80ED&center=true&vCenter=true&width=600&lines=Building+full-stack+web+apps+with+MERN+and+Java;Turning+ideas+into+scalable+products;Currently+building+Student+Management+System" alt="Typing SVG" />
 </p>
 
+<div align="center">
+  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+</div>
+
 ---
 
 ## 🧑‍💻 About Me
