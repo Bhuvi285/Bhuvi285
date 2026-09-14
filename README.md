@@ -21,7 +21,7 @@
 ## 🧑‍💻 About Me
 
 - 🔭 Currently building: **Student Management System** (full-stack web app)
-- 🌱 Currently strengthening: **Java Full Stack Development** (Spring Boot, Hibernate, REST APIs) alongside the MERN stack
+- 🌱 Currently strengthening: **Java Full Stack Development** (Spring Boot, Hibernate, REST APIs) alongside the MERN stack with Next.js
 - 🎓 Final-year **B.Tech Computer Engineering** student, R. C. Patel Institute of Technology, Shirpur
 - 🎯 Actively preparing for placements — targeting industry roles by **December 2026**
 - 💼 Prior internship: **Data Science & NLP** at Innomatics Research Labs (fine-tuned BERT/DistilBERT models, LLM-based projects)
