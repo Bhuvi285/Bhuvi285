@@ -1,9 +1,9 @@
 name: Update GitHub Profile
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,9 +14,13 @@ jobs:
 
     steps:
 
-      # -----------------------------
-      # GitHub Metrics
-      # -----------------------------
+      # Checkout your profile repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Generate GitHub metrics
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
@@ -25,27 +29,18 @@ jobs:
 
           user: Bhuvi285
           template: classic
+
           base: header, activity, community, repositories, metadata
 
           config_timezone: Asia/Kolkata
-          config_display: large
 
           plugin_languages: yes
           plugin_languages_limit: 8
-          plugin_languages_sections: most-used
 
           plugin_calendar: yes
 
-          plugin_followup: yes
-
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-
-      # -----------------------------
-      # GitHub Achievements
-      # -----------------------------
-      - name: Generate Achievements
+      # Generate GitHub achievements
+      - name: Generate GitHub Achievements
         uses: lowlighter/metrics@latest
         with:
           filename: assets/github-achievements.svg
@@ -56,14 +51,11 @@ jobs:
           base: ""
 
           config_timezone: Asia/Kolkata
-          config_display: large
 
           plugin_achievements: yes
           plugin_achievements_threshold: B
 
-      # -----------------------------
-      # Contribution Snake
-      # -----------------------------
+      # Generate contribution snake
       - name: Generate Contribution Snake
         uses: Platane/snk@v3
         with:
@@ -71,16 +63,19 @@ jobs:
           outputs: |
             assets/github-contribution-grid-snake.svg
 
-      # -----------------------------
-      # Commit generated files
-      # -----------------------------
+      # Commit generated SVG files
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          mkdir -p assets
+
           git add assets/
 
-          git diff --cached --quiet || git commit -m "Update GitHub profile"
-
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update GitHub profile assets"
+            git push
+          fi
