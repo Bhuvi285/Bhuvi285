@@ -78,6 +78,7 @@ Java Full Stack Developer | MERN Stack Developer | Final-Year Computer Engineeri
 ### Languages & Tools
 
 <p>
+<img src="https://img.shields.io/badge/Java-4CAF50?style=for-the-badge&logo=java&logoColor=white" />
 <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
 <img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white" />
