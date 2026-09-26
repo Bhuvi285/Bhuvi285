@@ -38,6 +38,7 @@ jobs:
           plugin_languages_limit: 8
 
           plugin_calendar: yes
+          output_action: none
 
       # Generate GitHub achievements
       - name: Generate GitHub Achievements
@@ -54,6 +55,7 @@ jobs:
 
           plugin_achievements: yes
           plugin_achievements_threshold: B
+          output_action: none
 
       # Generate contribution snake
       - name: Generate Contribution Snake
