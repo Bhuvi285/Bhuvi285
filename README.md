@@ -28,6 +28,9 @@ Java Full Stack Developer | MERN Stack Developer | Final-Year Computer Engineeri
   <img src="https://img.shields.io/github/stars/Bhuvi285?label=Stars&style=flat-square" />
 </p>
 
+
+<div align="center"> <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" /> </div>
+
 ---
 
 ## 🧑‍💻 About Me
@@ -184,14 +187,6 @@ A simple task management application built while learning React Hooks.
 
 <p align="center">
   <img src="./assets/github-metrics.svg" width="100%" alt="GitHub Metrics" />
-</p>
-
----
-
-# 🐍 Contribution Snake
-
-<p align="center">
-  <img src="./assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
 </p>
 
 ---
