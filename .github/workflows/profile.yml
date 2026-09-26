@@ -1,0 +1,86 @@
+name: Update GitHub Profile
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # -----------------------------
+      # GitHub Metrics
+      # -----------------------------
+      - name: Generate GitHub Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: assets/github-metrics.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          user: Bhuvi285
+          template: classic
+          base: header, activity, community, repositories, metadata
+
+          config_timezone: Asia/Kolkata
+          config_display: large
+
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+
+          plugin_calendar: yes
+
+          plugin_followup: yes
+
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+      # -----------------------------
+      # GitHub Achievements
+      # -----------------------------
+      - name: Generate Achievements
+        uses: lowlighter/metrics@latest
+        with:
+          filename: assets/github-achievements.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          user: Bhuvi285
+          template: classic
+          base: ""
+
+          config_timezone: Asia/Kolkata
+          config_display: large
+
+          plugin_achievements: yes
+          plugin_achievements_threshold: B
+
+      # -----------------------------
+      # Contribution Snake
+      # -----------------------------
+      - name: Generate Contribution Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: Bhuvi285
+          outputs: |
+            assets/github-contribution-grid-snake.svg
+
+      # -----------------------------
+      # Commit generated files
+      # -----------------------------
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/
+
+          git diff --cached --quiet || git commit -m "Update GitHub profile"
+
+          git push
