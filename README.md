@@ -184,6 +184,12 @@ A simple task management application built while learning React Hooks.
 
 ---
 
+## 📊 GitHub Stats 
+<p align="center"> 
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Bhuvi285&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&cache_seconds=86400" /> 
+  <img width="49%" src="https://streak-stats.demolab.com/?user=Bhuvi285&theme=tokyonight&hide_border=true" alt="GitHub Streak" /> 
+</p>
+
 # 📊 GitHub Activity
 
 <p align="center">
