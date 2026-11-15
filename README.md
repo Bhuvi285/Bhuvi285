@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Bhuvanesh Neve</h1>
 
 <h3 align="center">
-Java Full Stack Developer | MERN Stack Developer | Final-Year Computer Engineering Student
+Java Full Stack Developer | Final-Year Computer Engineering Student
 </h3>
 
 <p align="center">
@@ -37,7 +37,7 @@ Java Full Stack Developer | MERN Stack Developer | Final-Year Computer Engineeri
 
 - 🎓 Final-year **B.Tech Computer Engineering** student at R. C. Patel Institute of Technology, Shirpur
 - 🌱 Currently learning **Java Full Stack Development** with Spring Boot, Hibernate/JPA and REST APIs
-- ⚛️ Also learning **React, Next.js and the MERN stack**
+- ⚛️ Additional Skills are **React, Next.js and the MERN stack**
 - 🔭 Currently working on a **Student Management System**
 - 💼 Previously worked on a **Data Science & NLP internship project**
 - 🧠 Currently improving my **Java, DSA and backend development** skills
